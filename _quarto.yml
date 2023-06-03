@@ -7,10 +7,10 @@ website:
     left:
       - href: challenge.qmd
         text: The Challenge
+      - href: proposal.qmd
+        text: Proposal
       - text: "The Goods"
         menu:
-          - text: "Proposal"
-            href: "thegoods/proposal.html"
           - text: "R Shiny App"
             href: ""
           - text: "Poster"
@@ -18,7 +18,7 @@ website:
     right: 
       - href: index.qmd
         text: Home
-      - href: about.qmd
+      - href: team.qmd
         text: The Team
 format:
   html: 

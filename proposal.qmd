@@ -1,0 +1,35 @@
+---
+title: "Proposal"
+date: "3 June 2023"
+---
+
+## 1. Motivation
+
+The team at Fisheye International has taken a big first step collecting large amount of data on the fishing industry. The knowledge graphs provided across the mini-challenges were also useful in providing broad insights to the industry. However, the team believes the data has great potential to go beyond just broad industry trends.
+
+Inspired by Prof Kam and his great enthusiasm for the annual VAST Challenge, team four aims to create an interactive R Shiny App that would allow users the flexibility to quickly identify key business types, toggle between them to dig deep, in order to answer questions from Challenge 3 of the VAST Challenge, to identify potential groups involved in illegal fishing activities.
+
+## 2. Scope and Approach
+
+### 2.1 Scope
+
+After a brief review of the data, a few problems were observed, and the team would do the necessary cleaning subsequently. We would however, like to highlight that for the purpose of our project, we will narrow down the nodes using a two-step process:
+
+1.  Using the variable product_services, we will identify nodes that are directly associated with the fishing industry.
+2.  Using these nodes as an anchor, we will identify all nodes that share a relationship with the main anchor nodes. These additional nodes could include companies that are not in the fishing industry, but supply various forms of products or services e.g., sale of automobiles, electronics, to the industry.
+
+### 2.2 Assumptions and Approach
+
+To address the main objectives of the challenge, our team has broken the task down to 3 main themes to explore:
+
+1.  First, our assumption is that that companies or individuals with higher than normal revenue and dealing with fishery products are of higher "financial" risks.
+2.  Second, individuals who are connected to more than 1 coy are of higher "network" risk than those who are merely associated with 1 coy.
+3.  Third, certain countries, with more fishery coys and individuals residing in them are of higher country risk as our lit review shows that IUU tends to occur in countries with with less regulations and enforcement on IUU.
+
+These 3 facets; financial risk, network risk and country of association will serve as the 3 main indicators we will look at to identify potential clusters involved in illegal fishing activities.
+
+## 3. Prototypes
+
+### 3.1 Financial Risks
+
+### 

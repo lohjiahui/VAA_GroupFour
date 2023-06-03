@@ -13,7 +13,7 @@ This challenge involves helping FishEye develop a new visual analytics approach 
 **The specific objectives are:**
 
 |                                    |                                                                                                                                                                                                    |
-|:-----------------:|-----------------------------------------------------|
+|:----------------------------------:|----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
 | ![](image/anomaly.png){width="65"} | Use visual analytics to identify anomalies in the business groups present in the knowledge graph.                                                                                                  |
 | ![](image/similar.png){width="65"} | Develop a visual analytics process to find similar businesses and group them, focusing on a business's most important features.                                                                    |
 | ![](image/measure.png){width="65"} | Measure similarity of businesses that you group in the previous question. Express confidence in your groupings visually.                                                                           |

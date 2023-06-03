@@ -23,9 +23,9 @@
   {
     "objectID": "proposal.html",
     "href": "proposal.html",
-    "title": "MC3",
+    "title": "Proposal",
     "section": "",
-    "text": "Show the Code\npacman::p_load(jsonlite, tidygraph, ggraph, visNetwork, tidyverse, igraph, ggraph, lubridate, clock, graphlayouts, ggridges, viridis, ggdist, colorspace, ggdist, ggridges, ggthemes, colorspace, scales, cowplot, visNetwork, plotly, stringr, igraph, patchwork, viridis)\n\n\n\n\nShow the Code\nMC3 <- jsonlite::fromJSON(\"/Users/jiahuiloh/School/Visual_Analytics/VAST data challenge/MC3/MC3.json\")\n\n\n\n\nShow the Code\nMC3_nodes <- as_tibble(MC3$nodes) %>%\n  select(id, country, product_services, revenue_omu, type) \n\nMC3_edges <- as_tibble(MC3$links) %>%\n  select(source, target, type)\n\n\n\n\nShow the Code\nglimpse(MC3_nodes)\n\n\nRows: 27,622\nColumns: 5\n$ id               <list> \"Jones LLC\", \"Coleman, Hall and Lopez\", \"Aqua Advanc…\n$ country          <list> \"ZH\", \"ZH\", \"Oceanus\", \"Utoporiana\", \"ZH\", \"ZH\", \"Ri…\n$ product_services <list> \"Automobiles\", \"Passenger cars, trucks, vans, and bu…\n$ revenue_omu      <list> 310612303, 162734684, 115004667, 90986413, 81466667,…\n$ type             <list> \"Company\", \"Company\", \"Company\", \"Company\", \"Company…\n\n\nShow the Code\nglimpse(MC3_edges)\n\n\nRows: 24,038\nColumns: 3\n$ source <list> \"Lake Chad  Catchers Limited Liability Company Worldwide\", \"La…\n$ target <list> \"Erin Flores\", \"Linda Lee\", \"Sharon Coleman\", \"John Rivera\", \"…\n$ type   <list> \"Beneficial Owner\", \"Beneficial Owner\", \"Beneficial Owner\", \"B…\n\n\n\n\nShow the Code\n# Count the number of unique values in column1\nunique_count <- MC3_nodes %>%\n pull(product_services) %>%\n  n_distinct()\n\n# Print the unique count\nprint(unique_count)\n\n\n[1] 3244"
+    "text": "The team at Fisheye International has taken a big first step collecting large amount of data on the fishing industry. The knowledge graphs provided across the mini-challenges were also useful in providing broad insights to the industry. However, the team believes the data has great potential to go beyond just broad industry trends.\nInspired by Prof Kam and his great enthusiasm for the annual VAST Challenge, team four aims to create an interactive R Shiny App that would allow users the flexibility to quickly identify key business types, toggle between them to dig deep, in order to answer questions from Challenge 3 of the VAST Challenge, to identify potential groups involved in illegal fishing activities."
   },
   {
     "objectID": "thegoods/proposal.html",
@@ -47,5 +47,40 @@
     "title": "Proposal",
     "section": "Approach and Prototypes",
     "text": "Approach and Prototypes"
+  },
+  {
+    "objectID": "thegoods/proposal.html#scope-and-approach",
+    "href": "thegoods/proposal.html#scope-and-approach",
+    "title": "Proposal",
+    "section": "2. Scope and Approach",
+    "text": "2. Scope and Approach\n\n2.1 Scope\nAfter a brief review of the data, a few problems were observed, and the team would do the necessary cleaning subsequently. We would however, like to highlight that for the purpose of our project, we will narrow down the nodes using a two-step process:\n\nUsing the variable product_services, we will identify nodes that are directly associated with the fishing industry.\nUsing these nodes as an anchor, we will identify all nodes that share a relationship with the main anchor nodes. These additional nodes could include companies that are not in the fishing industry, but supply various forms of products or services e.g., sale of automobiles, electronics, to the industry.\n\n\n\n2.2 Assumptions and Approach\nTo address the main objectives of the challenge, our team has broken the task down to 3 main themes to explore:\n\nFirst, our assumption is that that companies or individuals with higher than normal revenue and dealing with fishery products are of higher “financial” risks.\nSecond, individuals who are connected to more than 1 coy are of higher “network” risk than those who are merely associated with 1 coy.\nThird, certain countries, with more fishery coys and individuals residing in them are of higher country risk as our lit review shows that IUU tends to occur in countries with with less regulations and enforcement on IUU.\n\nThese 3 facets; financial risk, network risk and country of association will serve as the 3 main indicators we will look at to identify potential clusters involved in illegal fishing activities."
+  },
+  {
+    "objectID": "thegoods/proposal.html#prototypes",
+    "href": "thegoods/proposal.html#prototypes",
+    "title": "Proposal",
+    "section": "3. Prototypes",
+    "text": "3. Prototypes\n\n3.1 Financial Risks"
+  },
+  {
+    "objectID": "proposal.html#scope-and-approach",
+    "href": "proposal.html#scope-and-approach",
+    "title": "Proposal",
+    "section": "2. Scope and Approach",
+    "text": "2. Scope and Approach\n\n2.1 Scope\nAfter a brief review of the data, a few problems were observed, and the team would do the necessary cleaning subsequently. We would however, like to highlight that for the purpose of our project, we will narrow down the nodes using a two-step process:\n\nUsing the variable product_services, we will identify nodes that are directly associated with the fishing industry.\nUsing these nodes as an anchor, we will identify all nodes that share a relationship with the main anchor nodes. These additional nodes could include companies that are not in the fishing industry, but supply various forms of products or services e.g., sale of automobiles, electronics, to the industry.\n\n\n\n2.2 Assumptions and Approach\nTo address the main objectives of the challenge, our team has broken the task down to 3 main themes to explore:\n\nFirst, our assumption is that that companies or individuals with higher than normal revenue and dealing with fishery products are of higher “financial” risks.\nSecond, individuals who are connected to more than 1 coy are of higher “network” risk than those who are merely associated with 1 coy.\nThird, certain countries, with more fishery coys and individuals residing in them are of higher country risk as our lit review shows that IUU tends to occur in countries with with less regulations and enforcement on IUU.\n\nThese 3 facets; financial risk, network risk and country of association will serve as the 3 main indicators we will look at to identify potential clusters involved in illegal fishing activities."
+  },
+  {
+    "objectID": "proposal.html#prototypes",
+    "href": "proposal.html#prototypes",
+    "title": "Proposal",
+    "section": "3. Prototypes",
+    "text": "3. Prototypes\n\n3.1 Financial Risks"
+  },
+  {
+    "objectID": "team.html",
+    "href": "team.html",
+    "title": "About the team",
+    "section": "",
+    "text": "Hello! We are Jiahui, Kah Boon and Yixin!\nApologies, but the team is swamped, so no fancy write-up here for now. But please enjoy the meme."
   }
 ]

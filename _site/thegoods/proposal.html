@@ -84,15 +84,15 @@ ul.task-list li input[type="checkbox"] {
     <a class="nav-link" href="../challenge.html">
  <span class="menu-text">The Challenge</span></a>
   </li>  
+  <li class="nav-item">
+    <a class="nav-link" href="../proposal.qmd">
+ <span class="menu-text">Proposal</span></a>
+  </li>  
   <li class="nav-item dropdown ">
     <a class="nav-link dropdown-toggle" href="#" id="nav-menu-the-goods" role="button" data-bs-toggle="dropdown" aria-expanded="false">
  <span class="menu-text">The Goods</span>
     </a>
     <ul class="dropdown-menu" aria-labelledby="nav-menu-the-goods">    
-        <li>
-    <a class="dropdown-item" href="../thegoods/proposal.html">
- <span class="dropdown-text">Proposal</span></a>
-  </li>  
         <li class="dropdown-header">R Shiny App</li>
         <li class="dropdown-header">Poster</li>
     </ul>
@@ -122,9 +122,17 @@ ul.task-list li input[type="checkbox"] {
     <h2 id="toc-title">On this page</h2>
    
   <ul>
-  <li><a href="#motivation" id="toc-motivation" class="nav-link active" data-scroll-target="#motivation">Motivation</a></li>
-  <li><a href="#problem-statements" id="toc-problem-statements" class="nav-link" data-scroll-target="#problem-statements">Problem Statements</a></li>
-  <li><a href="#approach-and-prototypes" id="toc-approach-and-prototypes" class="nav-link" data-scroll-target="#approach-and-prototypes">Approach and Prototypes</a></li>
+  <li><a href="#motivation" id="toc-motivation" class="nav-link active" data-scroll-target="#motivation">1. Motivation</a></li>
+  <li><a href="#scope-and-approach" id="toc-scope-and-approach" class="nav-link" data-scroll-target="#scope-and-approach">2. Scope and Approach</a>
+  <ul class="collapse">
+  <li><a href="#scope" id="toc-scope" class="nav-link" data-scroll-target="#scope">2.1 Scope</a></li>
+  <li><a href="#assumptions-and-approach" id="toc-assumptions-and-approach" class="nav-link" data-scroll-target="#assumptions-and-approach">2.2 Assumptions and Approach</a></li>
+  </ul></li>
+  <li><a href="#prototypes" id="toc-prototypes" class="nav-link" data-scroll-target="#prototypes">3. Prototypes</a>
+  <ul class="collapse">
+  <li><a href="#financial-risks" id="toc-financial-risks" class="nav-link" data-scroll-target="#financial-risks">3.1 Financial Risks</a></li>
+  <li><a href="#section" id="toc-section" class="nav-link" data-scroll-target="#section"></a></li>
+  </ul></li>
   </ul>
 </nav>
     </div>
@@ -155,17 +163,41 @@ ul.task-list li input[type="checkbox"] {
 </header>
 
 <section id="motivation" class="level2">
-<h2 class="anchored" data-anchor-id="motivation">Motivation</h2>
+<h2 class="anchored" data-anchor-id="motivation">1. Motivation</h2>
 <p>The team at Fisheye International has taken a big first step collecting large amount of data on the fishing industry. The knowledge graphs provided across the mini-challenges were also useful in providing broad insights to the industry. However, the team believes the data has great potential to go beyond just broad industry trends.</p>
 <p>Inspired by Prof Kam and his great enthusiasm for the annual VAST Challenge, team four aims to create an interactive R Shiny App that would allow users the flexibility to quickly identify key business types, toggle between them to dig deep, in order to answer questions from Challenge 3 of the VAST Challenge, to identify potential groups involved in illegal fishing activities.</p>
 </section>
-<section id="problem-statements" class="level2">
-<h2 class="anchored" data-anchor-id="problem-statements">Problem Statements</h2>
+<section id="scope-and-approach" class="level2">
+<h2 class="anchored" data-anchor-id="scope-and-approach">2. Scope and Approach</h2>
+<section id="scope" class="level3">
+<h3 class="anchored" data-anchor-id="scope">2.1 Scope</h3>
+<p>After a brief review of the data, a few problems were observed, and the team would do the necessary cleaning subsequently. We would however, like to highlight that for the purpose of our project, we will narrow down the nodes using a two-step process:</p>
+<ol type="1">
+<li>Using the variable product_services, we will identify nodes that are directly associated with the fishing industry.</li>
+<li>Using these nodes as an anchor, we will identify all nodes that share a relationship with the main anchor nodes. These additional nodes could include companies that are not in the fishing industry, but supply various forms of products or services e.g., sale of automobiles, electronics, to the industry.</li>
+</ol>
 </section>
-<section id="approach-and-prototypes" class="level2">
-<h2 class="anchored" data-anchor-id="approach-and-prototypes">Approach and Prototypes</h2>
+<section id="assumptions-and-approach" class="level3">
+<h3 class="anchored" data-anchor-id="assumptions-and-approach">2.2 Assumptions and Approach</h3>
+<p>To address the main objectives of the challenge, our team has broken the task down to 3 main themes to explore:</p>
+<ol type="1">
+<li>First, our assumption is that that companies or individuals with higher than normal revenue and dealing with fishery products are of higher “financial” risks.</li>
+<li>Second, individuals who are connected to more than 1 coy are of higher “network” risk than those who are merely associated with 1 coy.</li>
+<li>Third, certain countries, with more fishery coys and individuals residing in them are of higher country risk as our lit review shows that IUU tends to occur in countries with with less regulations and enforcement on IUU.</li>
+</ol>
+<p>These 3 facets; financial risk, network risk and country of association will serve as the 3 main indicators we will look at to identify potential clusters involved in illegal fishing activities.</p>
+</section>
+</section>
+<section id="prototypes" class="level2">
+<h2 class="anchored" data-anchor-id="prototypes">3. Prototypes</h2>
+<section id="financial-risks" class="level3">
+<h3 class="anchored" data-anchor-id="financial-risks">3.1 Financial Risks</h3>
+</section>
+<section id="section" class="level3">
+<h3 class="anchored" data-anchor-id="section"></h3>
 
 
+</section>
 </section>
 
 </main> <!-- /main -->
