@@ -1,0 +1,13 @@
+---
+title: "Introduction"
+---
+
+![](image/fishermen.png)
+
+As part of the Vast Challeng 2023, NGO FishEye International, a nonpartisan organization in charge of understanding the social, political, and economic forces that drive the illegal fishing trade, is seeking help from the Visual Analytics communities to help identify such activities through data.
+
+![](image/fisheye.png){fig-align="center" width="319"}
+
+Specifically, they have spent the past several years collecting data, which they hope will help them to form a more comprehensive picture of this evolving threat. In mid-April, FishEye International made several of their datasets available to the public, along with a series of questions surrounding illegal fishing and its broader impacts.
+
+For more information on the VAST Challenge 2023, please visit the official website [here](https://vast-challenge.github.io/2023/).

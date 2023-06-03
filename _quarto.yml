@@ -1,0 +1,29 @@
+project:
+  type: website
+
+website:
+  title: "Visual Analytics and Applications - Group 4"
+  navbar:
+    left:
+      - href: challenge.qmd
+        text: The Challenge
+      - text: "The Goods"
+        menu:
+          - text: "Proposal"
+            href: "thegoods/proposal.html"
+          - text: "R Shiny App"
+            href: ""
+          - text: "Poster"
+            href: ""
+    right: 
+      - href: index.qmd
+        text: Home
+      - href: about.qmd
+        text: The Team
+format:
+  html: 
+    theme: lux
+    css: styles.css
+    toc: true
+    
+editor: visual

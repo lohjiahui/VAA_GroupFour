@@ -1,0 +1,51 @@
+[
+  {
+    "objectID": "index.html",
+    "href": "index.html",
+    "title": "Introduction",
+    "section": "",
+    "text": "As part of the Vast Challeng 2023, NGO FishEye International, a nonpartisan organization in charge of understanding the social, political, and economic forces that drive the illegal fishing trade, is seeking help from the Visual Analytics communities to help identify such activities through data.\n\n\n\n\n\nSpecifically, they have spent the past several years collecting data, which they hope will help them to form a more comprehensive picture of this evolving threat. In mid-April, FishEye International made several of their datasets available to the public, along with a series of questions surrounding illegal fishing and its broader impacts.\nFor more information on the VAST Challenge 2023, please visit the official website here."
+  },
+  {
+    "objectID": "about.html",
+    "href": "about.html",
+    "title": "About",
+    "section": "",
+    "text": "About this site\n\n1 + 1\n\n[1] 2"
+  },
+  {
+    "objectID": "challenge.html",
+    "href": "challenge.html",
+    "title": "Something’s fishy…",
+    "section": "",
+    "text": "As part of the VAST Challenge, participants may participate in 3 mini-challenges and one grand challenge. For the purpose of this project, the team will take on mini-challenge 3.\n\nMini-Challenge 3: Detect Anomalies\nFishEye International has been given access to an international finance corporation’s database on fishing related companies. In the past, FishEye has determined that companies with anomalous structures are far more likely to be involved in IUU.\nThis challenge involves helping FishEye develop a new visual analytics approach to better understand fishing business anomalies.\nThe specific objectives are:\n\n\n\n\n\n\n\n\nUse visual analytics to identify anomalies in the business groups present in the knowledge graph.\n\n\n\nDevelop a visual analytics process to find similar businesses and group them, focusing on a business’s most important features.\n\n\n\nMeasure similarity of businesses that you group in the previous question. Express confidence in your groupings visually.\n\n\n\nBased on the developed visualisation, provide evidence for or against the case that anomalous companies are involved in illegal fishing. Which business groups should FishEye investigate further?\n\n\n\nLastly, a reflection will be done to document the following:\n\nWhat was the most difficult aspect of working with this knowledge graph?\nDid the team have the tools and resources you needed to complete the challenge?\nWhat additional resources would have helped us?"
+  },
+  {
+    "objectID": "proposal.html",
+    "href": "proposal.html",
+    "title": "MC3",
+    "section": "",
+    "text": "Show the Code\npacman::p_load(jsonlite, tidygraph, ggraph, visNetwork, tidyverse, igraph, ggraph, lubridate, clock, graphlayouts, ggridges, viridis, ggdist, colorspace, ggdist, ggridges, ggthemes, colorspace, scales, cowplot, visNetwork, plotly, stringr, igraph, patchwork, viridis)\n\n\n\n\nShow the Code\nMC3 <- jsonlite::fromJSON(\"/Users/jiahuiloh/School/Visual_Analytics/VAST data challenge/MC3/MC3.json\")\n\n\n\n\nShow the Code\nMC3_nodes <- as_tibble(MC3$nodes) %>%\n  select(id, country, product_services, revenue_omu, type) \n\nMC3_edges <- as_tibble(MC3$links) %>%\n  select(source, target, type)\n\n\n\n\nShow the Code\nglimpse(MC3_nodes)\n\n\nRows: 27,622\nColumns: 5\n$ id               <list> \"Jones LLC\", \"Coleman, Hall and Lopez\", \"Aqua Advanc…\n$ country          <list> \"ZH\", \"ZH\", \"Oceanus\", \"Utoporiana\", \"ZH\", \"ZH\", \"Ri…\n$ product_services <list> \"Automobiles\", \"Passenger cars, trucks, vans, and bu…\n$ revenue_omu      <list> 310612303, 162734684, 115004667, 90986413, 81466667,…\n$ type             <list> \"Company\", \"Company\", \"Company\", \"Company\", \"Company…\n\n\nShow the Code\nglimpse(MC3_edges)\n\n\nRows: 24,038\nColumns: 3\n$ source <list> \"Lake Chad  Catchers Limited Liability Company Worldwide\", \"La…\n$ target <list> \"Erin Flores\", \"Linda Lee\", \"Sharon Coleman\", \"John Rivera\", \"…\n$ type   <list> \"Beneficial Owner\", \"Beneficial Owner\", \"Beneficial Owner\", \"B…\n\n\n\n\nShow the Code\n# Count the number of unique values in column1\nunique_count <- MC3_nodes %>%\n pull(product_services) %>%\n  n_distinct()\n\n# Print the unique count\nprint(unique_count)\n\n\n[1] 3244"
+  },
+  {
+    "objectID": "thegoods/proposal.html",
+    "href": "thegoods/proposal.html",
+    "title": "Proposal",
+    "section": "",
+    "text": "The team at Fisheye International has taken a big first step collecting large amount of data on the fishing industry. The knowledge graphs provided across the mini-challenges were also useful in providing broad insights to the industry. However, the team believes the data has great potential to go beyond just broad industry trends.\nInspired by Prof Kam and his great enthusiasm for the annual VAST Challenge, team four aims to create an interactive R Shiny App that would allow users the flexibility to quickly identify key business types, toggle between them to dig deep, in order to answer questions from Challenge 3 of the VAST Challenge, to identify potential groups involved in illegal fishing activities."
+  },
+  {
+    "objectID": "thegoods/proposal.html#problem-statements",
+    "href": "thegoods/proposal.html#problem-statements",
+    "title": "Proposal",
+    "section": "Problem Statements",
+    "text": "Problem Statements"
+  },
+  {
+    "objectID": "thegoods/proposal.html#approach-and-prototypes",
+    "href": "thegoods/proposal.html#approach-and-prototypes",
+    "title": "Proposal",
+    "section": "Approach and Prototypes",
+    "text": "Approach and Prototypes"
+  }
+]
