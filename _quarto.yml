@@ -16,13 +16,11 @@ website:
           - text: "Poster"
             href: ""
     right: 
-      - href: index.qmd
-        text: Home
       - href: team.qmd
         text: The Team
 format:
   html: 
-    theme: lux
+    theme: flatly
     css: styles.css
     toc: true
     

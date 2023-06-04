@@ -6,7 +6,7 @@
 
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
-<meta name="dcterms.date" content="2023-06-03">
+<meta name="dcterms.date" content="2023-06-04">
 
 <title>Visual Analytics and Applications - Group 4 - Proposal</title>
 <style>
@@ -131,7 +131,9 @@ ul.task-list li input[type="checkbox"] {
   <li><a href="#prototypes" id="toc-prototypes" class="nav-link" data-scroll-target="#prototypes">3. Prototypes</a>
   <ul class="collapse">
   <li><a href="#financial-risks" id="toc-financial-risks" class="nav-link" data-scroll-target="#financial-risks">3.1 Financial Risks</a></li>
-  <li><a href="#section" id="toc-section" class="nav-link" data-scroll-target="#section"></a></li>
+  <li><a href="#network-risks" id="toc-network-risks" class="nav-link" data-scroll-target="#network-risks">3.2 Network Risks</a></li>
+  <li><a href="#country-association" id="toc-country-association" class="nav-link" data-scroll-target="#country-association">3.3 Country Association&nbsp;</a></li>
+  <li><a href="#overall-assessment" id="toc-overall-assessment" class="nav-link" data-scroll-target="#overall-assessment">3.4 Overall Assessment&nbsp;</a></li>
   </ul></li>
   </ul>
 </nav>
@@ -152,7 +154,7 @@ ul.task-list li input[type="checkbox"] {
     <div>
     <div class="quarto-title-meta-heading">Published</div>
     <div class="quarto-title-meta-contents">
-      <p class="date">June 3, 2023</p>
+      <p class="date">June 4, 2023</p>
     </div>
   </div>
   
@@ -171,32 +173,111 @@ ul.task-list li input[type="checkbox"] {
 <h2 class="anchored" data-anchor-id="scope-and-approach">2. Scope and Approach</h2>
 <section id="scope" class="level3">
 <h3 class="anchored" data-anchor-id="scope">2.1 Scope</h3>
-<p>After a brief review of the data, a few problems were observed, and the team would do the necessary cleaning subsequently. We would however, like to highlight that for the purpose of our project, we will narrow down the nodes using a two-step process:</p>
+<p>After a brief review of the data, a few problems were observed, and the team would do the necessary cleaning subsequently. We would however, like to highlight that for the purpose of our project, we will narrow down the nodes using a two-step process:&nbsp;</p>
 <ol type="1">
 <li>Using the variable product_services, we will identify nodes that are directly associated with the fishing industry.</li>
-<li>Using these nodes as an anchor, we will identify all nodes that share a relationship with the main anchor nodes. These additional nodes could include companies that are not in the fishing industry, but supply various forms of products or services e.g., sale of automobiles, electronics, to the industry.</li>
+<li>With these nodes as an anchor, we will then identify all nodes that share a relationship with the main anchor nodes. These additional nodes could include companies that are not in the fishing industry, but supply various forms of products or services e.g., sale of automobiles, electronics, to the industry.&nbsp;Our analyses, would be based on this extended set of nodes and edges. &nbsp;</li>
 </ol>
 </section>
 <section id="assumptions-and-approach" class="level3">
 <h3 class="anchored" data-anchor-id="assumptions-and-approach">2.2 Assumptions and Approach</h3>
 <p>To address the main objectives of the challenge, our team has broken the task down to 3 main themes to explore:</p>
-<ol type="1">
-<li>First, our assumption is that that companies or individuals with higher than normal revenue and dealing with fishery products are of higher “financial” risks.</li>
-<li>Second, individuals who are connected to more than 1 coy are of higher “network” risk than those who are merely associated with 1 coy.</li>
-<li>Third, certain countries, with more fishery coys and individuals residing in them are of higher country risk as our lit review shows that IUU tends to occur in countries with with less regulations and enforcement on IUU.</li>
-</ol>
-<p>These 3 facets; financial risk, network risk and country of association will serve as the 3 main indicators we will look at to identify potential clusters involved in illegal fishing activities.</p>
+<table class="table">
+<colgroup>
+<col style="width: 19%">
+<col style="width: 80%">
+</colgroup>
+<tbody>
+<tr class="odd">
+<td><img src="image/Financial Risk.png" width="180" height="100"></td>
+<td><p><strong>The Financial Risk</strong></p>
+<p>Companies or individuals with higher (or lower) than normal revenue and dealing with fishery products are of higher “financial” risks.</p></td>
+</tr>
+<tr class="even">
+<td><img src="image/Network risk.png" class="img-fluid" width="180"></td>
+<td><p><strong>The Network Risk</strong></p>
+<p>Individuals who are connected to more than 1 company are of higher “network” risk than those who are merely associated with 1 company.&nbsp; This is because transhipments, which are highly associated with IUU, require at least 2 entities to be in cahoots.</p></td>
+</tr>
+<tr class="odd">
+<td><img src="image/Country Risk.png" class="img-fluid" width="180"></td>
+<td><p><strong>The Country Risk</strong></p>
+<p>Certain countries, with more fishery companies and individuals residing in them, are of higher country risk as our literature review shows that IUU tends to occur in countries with lesser regulations and enforcement.</p></td>
+</tr>
+</tbody>
+</table>
+<p>These 3 facets; financial risk, network risk and country of association will serve as the 3 main indicators we will look at to identify potential clusters involved in illegal fishing activities.&nbsp;&nbsp;</p>
 </section>
 </section>
 <section id="prototypes" class="level2">
 <h2 class="anchored" data-anchor-id="prototypes">3. Prototypes</h2>
 <section id="financial-risks" class="level3">
 <h3 class="anchored" data-anchor-id="financial-risks">3.1 Financial Risks</h3>
+<p>To identify individuals and companies that have higher financial risk, we will use the trusty Boxplot to identify the outliers based on their revenue.</p>
+<p>A Boxplot is a graphical representation of the distribution of numerical data that shows the median, quartiles, and extreme values. Users can filter the records to be visualized by entering the Id, selecting the Country or the Category of Products_Services (which the team will device during the data preparation stage). Although, any datapoints that lie beyond 1.5 times of the Interquartile Range (IQR) are regarded as outliers by convention, we will also include a slider in our plot for the user to adjust the 1.5 time threshold for determining outliers. This way, users can customize their analysis and explore different scenarios.&nbsp;</p>
+<section id="image-1.-prototype---financial-risk" class="level6">
+<h6 class="anchored" data-anchor-id="image-1.-prototype---financial-risk">Image 1. Prototype - Financial Risk</h6>
+<p><img src="image/Financial.jpg" class="img-fluid"></p>
+<p>We will explore&nbsp;enriching the nodes/entities dataset by creating additional centrality measures to help us discern the roles that they have in the network.</p>
 </section>
-<section id="section" class="level3">
-<h3 class="anchored" data-anchor-id="section"></h3>
+</section>
+<section id="network-risks" class="level3">
+<h3 class="anchored" data-anchor-id="network-risks">3.2 Network Risks</h3>
+<p>In this section, we focus on individuals who are associated with more than 1 companies. We can derive these individuals by executing a <code>group-by()</code> function on the `to` column and filtering count greater than 1. Networks with such characteristics would tend also have higher betweenness scores as they are the ‘connectors’ between companies (be it seafood-seafood or seafood-energy companies).</p>
+<section id="image-2.-extracted-cases-of-individuals-associated-with-multiple-entities" class="level6">
+<h6 class="anchored" data-anchor-id="image-2.-extracted-cases-of-individuals-associated-with-multiple-entities">Image 2. Extracted cases of individuals associated with multiple entities</h6>
+<p><img src="image/Network1.png" class="img-fluid" width="350"></p>
+<p>Take the above summarised table as example, the sub-graphs of individuals having relationships with &gt;1 entity will be extracted. The network diameter of each of these sub-graphs will be calculated.</p>
+<p>We will provide the users with a data table with the following columns:&nbsp;</p>
+<ul>
+<li><strong>Cluster Number</strong>: The name assigned to a sub graph.&nbsp;</li>
+<li><strong>No.&nbsp;of Company:</strong> The total number of companies present in cluster&nbsp;</li>
+<li><strong>No.&nbsp;of Business owner</strong>: The total number of business owners present in the cluster&nbsp;</li>
+<li><strong>Size</strong>: The network diameter of this cluster.&nbsp;</li>
+</ul>
+<p>Looking at the prototype below, clicking on each row of the data table will reveal a coordinated hive plot on the right side of the layout. The purpose of this hive plot is for users to explore the patterns for the 2 types of relationship (Company – Beneficial Owner or Company- Company_Contact) in the cluster with high network diameter.&nbsp;</p>
+<p>Each axis of the hive plot represents a node type (Company, Business Owner or Company Contact). Each point on the hive plot represents an ID of a business entity. Each line represents a relationship exist between the different entity type. To distinguish the different sub-graphs in each cluster, the lines of each sub-graph will be coloured differently.</p>
+</section>
+<section id="image-3.-prototype---network-risk" class="level6">
+<h6 class="anchored" data-anchor-id="image-3.-prototype---network-risk">Image 3. Prototype - Network Risk</h6>
+<p><img src="image/Network.jpg" class="img-fluid"></p>
+<div class="callout-note callout callout-style-default no-icon callout-captioned">
+<div class="callout-header d-flex align-content-center">
+<div class="callout-icon-container">
+<i class="callout-icon no-icon"></i>
+</div>
+<div class="callout-caption-container flex-fill">
+<strong>Features of this visualisation:</strong>
+</div>
+</div>
+<div class="callout-body-container callout-body">
+<ul>
+<li>Coordinated view between data table and hive plot</li>
+<li>Hovering over hive plot display tooltip containing entity name, type and network diameter.</li>
+<li>A slider will be included for users to filter the table and hive plot by size (network diameter).</li>
+<li>The team might consider including other network statistics such as local clustering coefficient, highest betweenness-score and eigenvector centrality in the data table.</li>
+</ul>
+</div>
+</div>
+</section>
+</section>
+<section id="country-association" class="level3">
+<h3 class="anchored" data-anchor-id="country-association">3.3 Country Association&nbsp;</h3>
+<p>For users to explore countries with high risk, we will use bar charts. For top N countries, users can examine the (1) number of companies registered under them, (2) total revenue and (3) number of beneficiaries owners by clicking on the radio buttons available on the left pane.&nbsp;</p>
+<section id="image-4.-prototype---country-association" class="level6">
+<h6 class="anchored" data-anchor-id="image-4.-prototype---country-association">Image 4. Prototype - Country Association</h6>
+<p><img src="image/Country.png" class="img-fluid"></p>
+</section>
+</section>
+<section id="overall-assessment" class="level3">
+<h3 class="anchored" data-anchor-id="overall-assessment">3.4 Overall Assessment&nbsp;</h3>
+<p>Lastly, to visualize the risk levels of the entities based on the three indicators we have discussed, we will create a heatmap that shows the color intensity of each entity according to its risk score. This way, we can easily identify the entities that pose higher risks. Users can filter the records to be displayed on the heatmap by entering the Id, selecting the Country or the Category of Products_Services.&nbsp;</p>
+<p>If a user wants to explore a particular entity in more detail after viewing the heatmap, he can click on the id shown for that entity on the heatmap, which will open its interactive ego network for further analysis.&nbsp;</p>
+<section id="image-4.-prototype---overall-assessment" class="level6">
+<h6 class="anchored" data-anchor-id="image-4.-prototype---overall-assessment">Image 4. Prototype - Overall Assessment</h6>
+<p><img src="image/Overall.jpg" class="img-fluid"></p>
 
 
+</section>
 </section>
 </section>
 
