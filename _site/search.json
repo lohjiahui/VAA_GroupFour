@@ -96,5 +96,12 @@
     "title": "Proposal - Project Hooked",
     "section": "4 Project Timeline and Work Allocation",
     "text": "4 Project Timeline and Work Allocation\nIn order to achieve the above, the team has put together a tentative timeline:"
+  },
+  {
+    "objectID": "rshiny.html",
+    "href": "rshiny.html",
+    "title": "Welcome to our R Shiny App",
+    "section": "",
+    "text": "The R Shiny application for Project Hooked aims to help users explore the data as provided for mini-challenge 3 of the VAST Challenge 2023 through 3 different lenses:\nFinancial Risks: This module allows user to explore the financial status (e.g., Total Revenue by subgraph, Total Revenue per company, Total Revenue per Beneficial Owner) to identify fishy clusters.\nCountry Risks: The goal of this module aims to help users explore this data from a country perspective. Answering questions such as, “Which subgraph spans across most countries?”, “Are there any unique features of these subgraphs?”\nNetwork Risks: This module allows user to visualise the over network of each subgraph, to deep dive into the relationships betweens companies, beneficial owners and company contacts.\nHop over to our Shiny App by clicking here. Want to dive in deeper? Explore our user guide here."
   }
 ]
