@@ -13,6 +13,8 @@ website:
         menu:
           - text: "R Shiny App"
             href: ""
+          - text: "Userguide"
+            href: ""            
           - text: "Poster"
             href: ""
     right: 

@@ -1,5 +1,5 @@
 ---
-title: "Proposal"
+title: "Proposal - Project Hooked "
 date: "4 June 2023"
 ---
 
@@ -7,7 +7,7 @@ date: "4 June 2023"
 
 The team at Fisheye International has taken a big first step collecting large amount of data on the fishing industry. The knowledge graphs provided across the mini-challenges were also useful in providing broad insights to the industry. However, the team believes the data has great potential to go beyond just broad industry trends.
 
-Inspired by Prof Kam and his great enthusiasm for the annual VAST Challenge, team four aims to create an interactive R Shiny App that would allow users the flexibility to quickly identify key business types, toggle between them to dig deep, in order to answer questions from Challenge 3 of the VAST Challenge, to identify potential groups involved in illegal fishing activities.
+Inspired by Prof Kam and his great enthusiasm for the annual VAST Challenge, team four aims to create an interactive R Shiny App that would allow users the flexibility to quickly identify key business types, toggle between them to dig deep, in order to "hook" onto potential groups who are potentially involved in illegal fishing activities.
 
 ## 2. Scope and Approach
 
@@ -103,3 +103,9 @@ If a user wants to explore a particular entity in more detail after viewing the 
 ###### Image 4. Prototype - Overall Assessment
 
 ![](image/Overall.jpg)
+
+## 4 Project Timeline and Work Allocation
+
+In order to achieve the above, the team has put together a tentative timeline:
+
+![](image/TimelineChart.png)
