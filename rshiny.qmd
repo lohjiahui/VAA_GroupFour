@@ -2,7 +2,9 @@
 title: "Welcome to our R Shiny App"
 ---
 
-<center>![](image/Shiny-logo.png){width="272"}</center></br>
+<center>![](image/Shiny-logo.png){width="272"}</center>
+
+</br>
 
 The R Shiny application for **Project Hooked** aims to help users explore the data as provided for mini-challenge 3 of the VAST Challenge 2023 through 3 different lenses:
 
@@ -12,7 +14,6 @@ The R Shiny application for **Project Hooked** aims to help users explore the da
 
 **Network Risks:** This module allows user to visualise the over network of each subgraph, to deep dive into the relationships betweens companies, beneficial owners and company contacts.
 
-**Ranking:** To tie all the individual risks together, this module allow users to select variables they believe are important when identifying illegal fishing entities, and would reveal the outlier subgraphs accordingly. 
+**Ranking:** To tie all the individual risks together, this module allow users to select variables they believe are important when identifying illegal fishing entities, and would reveal the outlier subgraphs accordingly.
 
-Hop over to our Shiny App by clicking here.</br>
-Want to dive in deeper? Explore our user guide here.
+Hop over to our Shiny App by clicking here.</br> Want to dive in deeper? Explore our user guide here.
