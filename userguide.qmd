@@ -4,4 +4,4 @@ title: "User guide"
 
 ![](image/UserguideBanner.png)
 
-<center>Fret not. Explore our user guide here.</center>
+<center>Fret not. Explore our user guide [here](https://lohjiahui.github.io/VAA_GroupFour/file/Userguide.pdf).</center>
