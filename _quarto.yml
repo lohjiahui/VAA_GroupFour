@@ -16,7 +16,7 @@ website:
           - text: "Userguide"
             href: userguide.qmd            
           - text: "Poster"
-            href: ""
+            href: poster.qmd
     right: 
       - href: team.qmd
         text: The Team
