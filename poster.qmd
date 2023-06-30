@@ -2,6 +2,6 @@
 title: "Poster"
 ---
 
-The original poster can be viewed [here](https://lohjiahui.github.io/VAA_GroupFour/file/VAA_poster.pdf).
+The original poster can be viewed [here](https://lohjiahui.github.io/VAA_GroupFour/file/VAA_Poster.pdf).
 
 ![](image/Poster.png)
