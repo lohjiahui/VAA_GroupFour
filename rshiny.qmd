@@ -16,4 +16,4 @@ The R Shiny application for **Project Hooked** aims to help users explore the da
 
 **Ranking:** To tie all the individual risks together, this module allow users to select variables they believe are important when identifying illegal fishing entities, and would reveal the outlier subgraphs accordingly.
 
-Hop over to our Shiny App by clicking here.</br>
+Hop over to our Shiny App by clicking [here](https://neoyx.shinyapps.io/Group4_project/).</br>
